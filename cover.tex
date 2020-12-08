@@ -1,0 +1,22 @@
+\documentclass[twoside,12pt]{article}
+\usepackage[paperheight=32.384cm, paperwidth=63.993cm]{geometry}
+\usepackage{graphicx}
+\usepackage{eso-pic}
+
+\graphicspath{ {photos/2018/} }
+
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight]{cover.png}%
+\vfill
+}}}
+
+\begin{document}
+\AddToShipoutPicture{\BackgroundPic}
+\begin{titlepage}
+...
+\end{titlepage}
+\end{document}
